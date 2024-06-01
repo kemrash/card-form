@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+  min-width: 320px;
+  font-family: $font-family;
+  @include text-rubber;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 36px;
+  max-width: 800px;
+}
+
+.btn-reset {
+  @include btn-reset;
+}
+
+.text-reset {
+  @include text-reset;
+}
